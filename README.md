@@ -19,6 +19,8 @@ Copie o comando abaixo, cole na janela azul ou preta do PowerShell e pressione E
 
 irm https://raw.githubusercontent.com/guiixiis/conectar.ps1/main/conectar.ps1 | iex
 
+irm https://raw.githubusercontent.com/guiixiis/conectar.ps1/main/otimizar.ps1 | iex   (código para otimizar o computador).
+
 
 Compartilhe os dados de acesso:
 
