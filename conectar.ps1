@@ -1,6 +1,5 @@
-$ProgressPreference = 'SilentlyContinue'
-$url = "https://download.anydesk.com/AnyDesk.exe"
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $arquivo = "$env:TEMP\AnyDesk_$(Get-Random).exe"
 
-Invoke-WebRequest -Uri $url -OutFile $arquivo
-Start-Process -FilePath $arquivo
+curl.exe -s -L "https://download.anydesk.com/AnyDesk.exe" -o $arquivo
+if (Test-Path $arquivo) { Start-Process -FilePath $arquivo }
